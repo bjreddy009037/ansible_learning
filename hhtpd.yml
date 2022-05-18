@@ -1,7 +1,8 @@
 ---
-- name: insatlling wervers
-  hosts: webservers
+- name: yum module
+  hosts: all
   tasks:
+  - name: installing httpd server
     yum:
       name: httpd
       state: latest
