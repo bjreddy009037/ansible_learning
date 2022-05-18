@@ -6,7 +6,7 @@
   - name: installing git
     yum:
       name: git
-      state: lastest
+      state: latest
 
   - name: installing tree
     yum:
