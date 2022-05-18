@@ -5,7 +5,7 @@
   tasks:
     - name: copying a file
       ansible.builtin.copy:
-               src: /home/ansadmin/ansible_learning/inddex.html
+               src: /home/ansadmin/ansible_learning/index.html
                dest: /home/ansadmin
                mode: 0600
                owner: john
