@@ -1,7 +1,6 @@
 ---
-- name: insatlling htppd
-  hosts: all
-  become: true
+- name: insatlling wervers
+  hosts: webservers
   yum:
     name: httpd
     state: latest
