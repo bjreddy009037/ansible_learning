@@ -1,5 +1,8 @@
 ---
-- hosts: all
+- name: this play is creating a user
+  hosts: all
   become: true
   tasks:
-  - user: name=jana
+  - name: creating a usser john
+    user: name=john
+
