@@ -1,0 +1,14 @@
+---
+- name: this playbbok for insatlling yum module
+  hosts: webservers
+  become: true
+  tasks:
+  - name: installing git
+    yum:
+      name: git
+      state: lastest
+
+  - name: installing tree
+    yum:
+      name: tree
+      state: installed
