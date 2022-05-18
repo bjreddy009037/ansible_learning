@@ -8,6 +8,7 @@
       name: httpd
       state: started
 
+
   - name: unistalling httpd
     yum:
       name: httpd
