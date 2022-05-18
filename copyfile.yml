@@ -6,5 +6,6 @@
     - ansible.builtin.copy:
        -  src: /home/ansadmin/ansible_learning/inddex.html
           dest: /home/ansadmin
-          owner: ansadmin
           mode: 0600
+          owner: john
+
