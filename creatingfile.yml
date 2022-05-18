@@ -1,0 +1,7 @@
+---
+- name: creating file
+  hosts: all
+  tasks:
+    - ansible.builtin.file:
+        path: /home/ansadmin/demofile
+        state: touch
