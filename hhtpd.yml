@@ -5,4 +5,9 @@
   - name: installing httpd server
     yum:
       name: httpd
-      state: latest
+      state: installed
+
+  - name: starting a service
+    ansible.builtin.service:
+      name: httpd
+      state: started
