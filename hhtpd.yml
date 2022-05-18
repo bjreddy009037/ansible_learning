@@ -1,7 +1,7 @@
 ---
--name: insalling htppd
+-name: insatlling htppd
  hosts: all
- becom: true
+ become: true
  yum:
    name: httpd
    state: latest
