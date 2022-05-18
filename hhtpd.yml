@@ -1,6 +1,7 @@
 ---
 - name: insatlling wervers
   hosts: webservers
-  yum:
-    name: httpd
-    state: latest
+  tasks:
+    yum:
+      name: httpd
+      state: latest
