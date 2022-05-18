@@ -1,6 +1,7 @@
 ---
 - name: yum module
   hosts: webservers
+  become: true
   tasks:
   - name: installing httpd server
     yum:
