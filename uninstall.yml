@@ -1,0 +1,16 @@
+---
+- name: unistalling a httpd
+  hosts: webservers
+  become: true
+  tasks:
+  -name: stopping httpd
+    ansible.builtin.service:
+      name: httpd
+      state: started
+
+  - name: unistalling httpd
+    yum:
+      name: httpd
+      state: removed
+
+
