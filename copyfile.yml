@@ -4,7 +4,7 @@
   become: true
   tasks:
     - name: copying a file
-        ansible.builtin.copy:
+      ansible.builtin.copy:
              - src: /home/ansadmin/ansible_learning/inddex.html
                dest: /home/ansadmin
                mode: 0600
